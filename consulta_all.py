@@ -12,9 +12,10 @@ from presentacion import presentar
 presentar()
 
 session = SessionLocal()
-
+print("Lista de todas las instituciones de Educación superior almaceadas:","\n")
 instituciones = session.query(Institucion).all()
+print("Identificador", "\t|\t", "Institución")
 for inst in instituciones:
-    print(inst.nombre)
+    print(inst.id,"\t\t|\t", inst.nombre)
 
 session.close()

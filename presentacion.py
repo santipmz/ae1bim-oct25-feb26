@@ -8,4 +8,4 @@ def presentar():
     print("Universitad Técnica Particular de Loja")
     print("Carrera de Ingeniería en Tecnologías de Información")
     print("Desarrollo Basado en Plataformas Web")
-    print("Santiago Patricio Muñoz Zurita") 
+    print("Por: Santiago Patricio Muñoz Zurita","\n") 
