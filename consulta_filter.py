@@ -13,12 +13,14 @@ from presentacion import presentar
 presentar()
 
 session = SessionLocal()
-print("CONSULTA 2: filter() investigadores del área IA")
+print("Este ejemplo muestra el uso de Consultas con operadores con filter()","\n")
+print("Lista de investigadores con Áreas de investigación que contenga \"Re\"","\n")
 inv_ia = session.query(Investigador).filter(
-    Investigador.area_investigacion.like("%IA%")
+    Investigador.area_investigacion.like("%Re%")
 ).all()
+print("Investigador", "\t\t|\t", "Área de Investigación")
 for inv in inv_ia:
-    print(f"{inv.nombre} {inv.apellido} - {inv.area_investigacion}")
+    print(f"{inv.nombre} {inv.apellido}","\t|\t",f"{inv.area_investigacion}")
 
     session.close()
 print("\nConsulta FILTER ejecutadas correctamente.")
