@@ -139,7 +139,7 @@ inv3 = Investigador(
     nombre="Ezequiel",
     apellido="Rojas",
     email="ezerojasa@gnail.ec",
-    area_investigacion="Filosofía del Copmportamiento",
+    area_investigacion="Filosofía del Comportamiento",
     departamento=dep3
 )
 inv4 = Investigador(
@@ -152,7 +152,7 @@ inv4 = Investigador(
 inv5 = Investigador(
     nombre="Paquita",
     apellido="Serafina von der Vienerau",
-    email="pseraf@gmx.de",
+    email="pserafvdv@gmx.de",
     area_investigacion="Relaciones Laborales",
     departamento=dep5
 )
@@ -211,7 +211,7 @@ pub6 = Publicacion(
     titulo="Redes de comunicaciones en la antigua Roma",
     fecha_publicacion="2025-08-12",
     doi="11.2347/AETERNVM-ROMA-INVICTA.ml",
-    tipo_publicacion="Conferencia",
+    tipo_publicacion="Conferencia-Cursus Publicus",
     investigador=inv2
 )
 
