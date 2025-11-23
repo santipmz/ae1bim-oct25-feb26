@@ -25,4 +25,5 @@ pubs = session.query(Publicacion).order_by(desc(Publicacion.fecha_publicacion)).
 print("Fecha de publicación", "\t|\t", "Título")
 for p in pubs:
     print(p.fecha_publicacion, "\t\t|\t", p.titulo)
+
 session.close()

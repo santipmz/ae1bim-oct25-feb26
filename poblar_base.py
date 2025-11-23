@@ -74,7 +74,7 @@ session.add(inst9)
 session.add(inst10)
 session.commit()
 
-# Crear un departamento 
+# Crear objetos tipo departamento 
 dep1 = Departamento(
     nombre="Departamento de Ciencias de la Computación", 
     codigo="DEP001",
@@ -120,7 +120,7 @@ session.add(dep6)
 session.add(dep7)
 session.commit()
 
-# Crear un investigador
+# Crear objetos tipo investigador
 inv1 = Investigador(
     nombre="Santiago",
     apellido="Muñoz",
@@ -171,7 +171,7 @@ session.add(inv5)
 session.add(inv6)
 session.commit()
 
-# Crear una publicación
+# Crear objetos tipo publicación
 pub1 = Publicacion(
     titulo="Control de cultivos hidropónicos a través de plataformas web",
     fecha_publicacion="2023-11-12",

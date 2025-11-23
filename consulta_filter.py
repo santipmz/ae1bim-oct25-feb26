@@ -21,6 +21,9 @@ inv_re = session.query(Investigador).filter(
 ).all()
 print("Investigador", "\t\t\t\t|\t", "Área de Investigación")
 for inv in inv_re:
+    # La impresión sale mal por el número dispar de caracteres, tomo el máximo número de caracteres,
+    # esto también se puede automatizar, y lo resto del largo del nombre de cada institución, 
+    # luego inserto ese numero de caracteres
     aux=33-len(inv.apellido+inv.nombre)+1 # Correccion de tamaños
     print(f"{inv.nombre} {inv.apellido}"," "*aux,"\t|\t",f"{inv.area_investigacion}")
 

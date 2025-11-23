@@ -9,6 +9,7 @@ from configuracion import SessionLocal
 from crear_base_entidades import Institucion
 from presentacion import presentar
 
+# Función de impresión de datos de presentación de trabajo
 presentar()
 
 session = SessionLocal()
