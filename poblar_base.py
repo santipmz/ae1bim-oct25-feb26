@@ -57,7 +57,7 @@ inst9 = Institucion(
     pais="Estados Unidos"
 )
 inst10 = Institucion(
-    nombre="Massachusetts Techincal Institute", 
+    nombre="Massachusetts Technical Institute", 
     ciudad="Cambridge", 
     pais="Estados Unidos"
 )
@@ -151,8 +151,8 @@ inv4 = Investigador(
 )
 inv5 = Investigador(
     nombre="Paquita",
-    apellido="Serafina",
-    email="pseraf@gmx.de.com",
+    apellido="Serafina von der Vienerau",
+    email="pseraf@gmx.de",
     area_investigacion="Relaciones Laborales",
     departamento=dep5
 )
@@ -173,44 +173,44 @@ session.commit()
 
 # Crear una publicación
 pub1 = Publicacion(
-    titulo="Plataforma de control de cultivos hidropónicos a través de la web",
+    titulo="Control de cultivos hidropónicos a través de plataformas web",
     fecha_publicacion="2023-11-12",
-    doi="11.2345/semconductores.ml",
+    doi="11.2345/hidroponicas.ml",
     tipo_publicacion="Tesis",
     investigador=inv1
 )
 pub2 = Publicacion(
     titulo="Comportamiento de las partículas subatómicas en espacios simetricamente cerrados",
     fecha_publicacion="2025-11-12",
-    doi="11.2345/semconductores.ml",
+    doi="11.2349/semconductores.ml",
     tipo_publicacion="Artículo",
     investigador=inv2
 )
 pub3 = Publicacion(
     titulo="Filosofía aplicada al comportamiento infantil desde un punto de vista epistemológico",
     fecha_publicacion="2025-11-12",
-    doi="11.2345/semconductores.ml",
+    doi="11.2350/comportamiento.ml",
     tipo_publicacion="Conferencia",
     investigador=inv3
 )
 pub4 = Publicacion(
     titulo="Factor de resistencia de materiales en aplicaciones turísticas",
     fecha_publicacion="2024-10-12",
-    doi="11.2345/semconductores.ml",
+    doi="11.2346/turismo.ml",
     tipo_publicacion="Tesis",
     investigador=inv4
 )
 pub5 = Publicacion(
     titulo="Compilación de investigaciones novedosas en el ámbito laboral",
     fecha_publicacion="2025-09-12",
-    doi="11.2345/semconductores.ml",
+    doi="11.2348/laboral.ml",
     tipo_publicacion="Artículo",
     investigador=inv5
 )
 pub6 = Publicacion(
     titulo="Redes de comunicaciones en la antigua Roma",
     fecha_publicacion="2025-08-12",
-    doi="11.2345/semconductores.ml",
+    doi="11.2347/AETERNVM-ROMA-INVICTA.ml",
     tipo_publicacion="Conferencia",
     investigador=inv2
 )
