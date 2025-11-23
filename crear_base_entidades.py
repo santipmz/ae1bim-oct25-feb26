@@ -16,9 +16,9 @@ class Institucion(Base):
     __tablename__ = "institucion"
 
     id = Column(Integer, primary_key=True)
-    nombre = Column(String, nullable=False)
-    ciudad = Column(String, nullable=False)
-    pais = Column(String, nullable=False)
+    nombre = Column(String(200), nullable=False)
+    ciudad = Column(String(50), nullable=False)
+    pais = Column(String(50), nullable=False)
 
     # Relación 1 a muchos con Departamento
     # Un Departamento tiene como atributo (clave foránea) una Institución.
@@ -29,8 +29,8 @@ class Departamento(Base):
     __tablename__ = "departamento"
 
     id = Column(Integer, primary_key=True)
-    nombre = Column(String, nullable=False)
-    codigo = Column(String, nullable=False)
+    nombre = Column(String(200), nullable=False)
+    codigo = Column(String(20), nullable=False)
 
     # Clave foránea a Institucion
     institucion_id = Column(Integer, ForeignKey("institucion.id"), nullable=False)
@@ -43,10 +43,10 @@ class Investigador(Base):
     __tablename__ = "investigador"
 
     id = Column(Integer, primary_key=True)
-    nombre = Column(String, nullable=False)
-    apellido = Column(String, nullable=False)
-    email = Column(String, nullable=False)
-    area_investigacion = Column(String, nullable=False)
+    nombre = Column(String(50), nullable=False)
+    apellido = Column(String(50), nullable=False)
+    email = Column(String(50), nullable=False)
+    area_investigacion = Column(String(100), nullable=False)
 
     # Clave foránea a Departamento
     departamento_id = Column(Integer, ForeignKey("departamento.id"), nullable=False)
@@ -59,11 +59,11 @@ class Publicacion(Base):
     __tablename__ = "publicacion"
 
     id = Column(Integer, primary_key=True)
-    titulo = Column(String, nullable=False)
+    titulo = Column(String(200), nullable=False)
     # El enunciado pide formato 'YYYY-MM-DD' en cadena, así que se usa String
-    fecha_publicacion = Column(String, nullable=False)
-    doi = Column(String, nullable=False)
-    tipo_publicacion = Column(String, nullable=False)
+    fecha_publicacion = Column(String(20), nullable=False)
+    doi = Column(String(100), nullable=False)
+    tipo_publicacion = Column(String(50), nullable=False)
 
     # Clave foránea a Investigador
     investigador_id = Column(Integer, ForeignKey("investigador.id"), nullable=False)
