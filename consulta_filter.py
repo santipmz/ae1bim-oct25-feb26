@@ -5,7 +5,6 @@
 
 # consula_filter.py
 
-from sqlalchemy import or_, and_
 from configuracion import SessionLocal
 from crear_base_entidades import Investigador
 from presentacion import presentar

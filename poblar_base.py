@@ -174,7 +174,7 @@ session.commit()
 # Crear una publicación
 pub1 = Publicacion(
     titulo="Plataforma de control de cultivos hidropónicos a través de la web",
-    fecha_publicacion="2025-11-12",
+    fecha_publicacion="2023-11-12",
     doi="11.2345/semconductores.ml",
     tipo_publicacion="Tesis",
     investigador=inv1
@@ -195,13 +195,13 @@ pub3 = Publicacion(
 )
 pub4 = Publicacion(
     titulo="Factor de resistencia de materiales en aplicaciones turísticas",
-    fecha_publicacion="2025-10-12",
+    fecha_publicacion="2024-10-12",
     doi="11.2345/semconductores.ml",
     tipo_publicacion="Tesis",
     investigador=inv4
 )
 pub5 = Publicacion(
-    titulo="Compilación de investigaciones novedosas en el ámbito laboralFactor de resistencia de materiales en aplicaciones turísticas",
+    titulo="Compilación de investigaciones novedosas en el ámbito laboral",
     fecha_publicacion="2025-09-12",
     doi="11.2345/semconductores.ml",
     tipo_publicacion="Artículo",
