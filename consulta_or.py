@@ -7,7 +7,7 @@
 
 from sqlalchemy import or_
 from configuracion import SessionLocal
-from crear_base_entidades import Investigador, Institucion
+from crear_base_entidades import Institucion
 from presentacion import presentar
 
 presentar()
