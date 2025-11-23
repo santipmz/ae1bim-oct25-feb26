@@ -37,7 +37,7 @@ inst5 = Institucion(
     pais="Cuba"
 )
 inst6 = Institucion(
-    nombre="Universiada Politécnica del Litora", 
+    nombre="Universidad Politécnica del Litoral", 
     ciudad="Guayaquil", 
     pais="Ecuador"
 )
