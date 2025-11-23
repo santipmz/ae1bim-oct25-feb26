@@ -195,24 +195,24 @@ pub3 = Publicacion(
 )
 pub4 = Publicacion(
     titulo="Factor de resistencia de materiales en aplicaciones turísticas",
-    fecha_publicacion="2025-11-12",
+    fecha_publicacion="2025-10-12",
     doi="11.2345/semconductores.ml",
     tipo_publicacion="Tesis",
     investigador=inv4
 )
 pub5 = Publicacion(
     titulo="Compilación de investigaciones novedosas en el ámbito laboralFactor de resistencia de materiales en aplicaciones turísticas",
-    fecha_publicacion="2025-11-12",
+    fecha_publicacion="2025-09-12",
     doi="11.2345/semconductores.ml",
     tipo_publicacion="Artículo",
     investigador=inv5
 )
 pub6 = Publicacion(
     titulo="Redes de comunicaciones en la antigua Roma",
-    fecha_publicacion="2025-11-12",
+    fecha_publicacion="2025-08-12",
     doi="11.2345/semconductores.ml",
     tipo_publicacion="Conferencia",
-    investigador=inv6
+    investigador=inv2
 )
 
 session.add(pub1)
