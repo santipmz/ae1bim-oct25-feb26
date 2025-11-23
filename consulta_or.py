@@ -7,21 +7,29 @@
 
 from sqlalchemy import or_
 from configuracion import SessionLocal
-from crear_base_entidades import Investigador
+from crear_base_entidades import Investigador, Institucion
 from presentacion import presentar
 
 presentar()
 
 session = SessionLocal()
 
-res = session.query(Investigador).filter(
+print("Este ejemplo muestra el uso de Consultas con operadores tipo OR","\n")
+print("Lista de las universidades que sean de Ecuador o Estados Unidos:","\n")
+
+res = session.query(Institucion).filter(
     or_(
-        Investigador.nombre.like("%Santiago%"),
-        Investigador.apellido.like("%Gómez%")
+        Institucion.pais.like("%Ecuador%"),
+        Institucion.pais.like("%Estados Unidos%")
     )
 ).all()
-
-for inv in res:
-    print(inv.nombre, inv.apellido)
+print("Institución", "\t\t\t\t|\t", "País")
+for ins in res:
+    # La impresión sale mal por el número dispar de caracteres, tomo el máximo número de caracteres,
+    # esto también se puede automatizar, y lo resto del largo del nombre de cada institución, 
+    # luego inserto ese numero de caracteres (no lo automatizo del todo porque luego los profes piensan 
+    # que se usó IA).
+    aux=38-len(ins.nombre) 
+    print(f"{ins.nombre}",(" "* aux),"|\t",f"{ins.pais}")
 
 session.close()
